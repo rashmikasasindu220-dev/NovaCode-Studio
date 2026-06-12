@@ -36,3 +36,17 @@ How to publish with a domain:
 Important:
 - The contact form is a demo mailto form. It opens the visitor's email app.
 - For a real contact form that stores messages, you need backend hosting or a form service.
+
+
+BIKEHUB PROJECT ADDED
+---------------------
+Your first portfolio project has been added as:
+BikeHub Inventory & POS System
+
+To change the details later:
+1. Open index.html
+2. Find "BikeHub Inventory & POS System"
+3. Edit the title, description, tags, and feature list
+4. Save the file and refresh the browser
+
+To add another project, copy one <article class="project-card reveal"> block in the Portfolio section and replace the text.
