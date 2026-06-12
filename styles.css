@@ -709,3 +709,232 @@ h3 { letter-spacing: -.03em; }
 @media (max-width: 760px) {
   .case-study-card { grid-template-columns: 1fr; padding: 22px; }
 }
+
+/* BikeHub portfolio link and project page */
+:root { --radius-lg: 32px; }
+.project-link {
+  display: block;
+  color: inherit;
+}
+.project-explore-badge {
+  position: absolute;
+  right: 22px;
+  bottom: 24px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(3,8,23,.74);
+  border: 1px solid rgba(34,216,255,.35);
+  color: #e9fbff;
+  font-size: .76rem;
+  letter-spacing: .03em;
+  box-shadow: 0 14px 34px rgba(0,0,0,.22);
+}
+.case-study-button { width: 100%; margin-top: 4px; }
+.project-page-header {
+  min-height: auto;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 42px;
+}
+.project-page-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, black, transparent 86%);
+  opacity: .35;
+}
+.project-hero {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, .88fr) minmax(420px, 1fr);
+  gap: 42px;
+  align-items: center;
+  padding: 78px 0 56px;
+}
+.project-hero-copy h1 { font-size: clamp(2.7rem, 7vw, 5.8rem); }
+.back-link {
+  display: inline-flex;
+  margin-bottom: 22px;
+  color: var(--cyan);
+  font-weight: 900;
+}
+.bikehub-system-frame {
+  border: 1px solid rgba(120,180,255,.2);
+  border-radius: 28px;
+  overflow: hidden;
+  background: rgba(5, 15, 34, .82);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
+.window-bar {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 18px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255,255,255,.04);
+}
+.window-bar span {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.36);
+}
+.window-bar span:nth-child(1) { background: #ff6b6b; }
+.window-bar span:nth-child(2) { background: #ffd166; }
+.window-bar span:nth-child(3) { background: #22d8ff; }
+.window-bar strong { margin-left: 8px; color: var(--muted); font-size: .88rem; }
+.dashboard-preview {
+  min-height: 430px;
+  display: grid;
+  grid-template-columns: 165px 1fr;
+}
+.dashboard-preview aside {
+  padding: 24px 18px;
+  background: rgba(2, 8, 20, .75);
+  border-right: 1px solid var(--line);
+}
+.dashboard-preview aside h3 { color: var(--cyan); margin-bottom: 22px; }
+.dashboard-preview aside p {
+  padding: 10px 12px;
+  border-radius: 12px;
+  color: var(--muted);
+  margin-bottom: 8px;
+  background: rgba(255,255,255,.035);
+}
+.dashboard-preview main { padding: 24px; }
+.dash-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.dash-title strong { font-size: 1.25rem; }
+.dash-title span { color: var(--muted); font-size: .86rem; }
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.metric-grid div,
+.chart-card,
+.table-card {
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 16px;
+  background: rgba(255,255,255,.045);
+}
+.metric-grid div { padding: 16px; }
+.metric-grid span { display: block; color: var(--muted); font-size: .78rem; margin-bottom: 6px; }
+.metric-grid strong { font-size: 1.45rem; color: #e9fbff; }
+.chart-card {
+  margin-top: 16px;
+  min-height: 155px;
+  padding: 24px;
+  display: flex;
+  align-items: end;
+  gap: 14px;
+}
+.chart-card span {
+  flex: 1;
+  border-radius: 12px 12px 4px 4px;
+  background: linear-gradient(180deg, var(--cyan), var(--blue));
+  opacity: .78;
+}
+.chart-card span:nth-child(1) { height: 44%; }
+.chart-card span:nth-child(2) { height: 62%; }
+.chart-card span:nth-child(3) { height: 38%; }
+.chart-card span:nth-child(4) { height: 78%; }
+.chart-card span:nth-child(5) { height: 58%; }
+.table-card {
+  margin-top: 16px;
+  padding: 18px;
+  display: grid;
+  gap: 12px;
+}
+.table-card span {
+  display: block;
+  height: 13px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.16);
+}
+.table-card span:nth-child(2) { width: 84%; }
+.table-card span:nth-child(3) { width: 92%; }
+.table-card span:nth-child(4) { width: 72%; }
+.project-detail-grid,
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+.tech-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.detail-card,
+.tech-card {
+  padding: 26px;
+  min-height: 230px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--card);
+  box-shadow: 0 18px 58px rgba(0,0,0,.18);
+}
+.detail-card strong {
+  display: block;
+  color: var(--cyan);
+  font-size: 2rem;
+  margin-bottom: 18px;
+}
+.detail-card p,
+.tech-card p,
+.showcase-copy p { color: var(--muted); }
+.bikehub-showcase {
+  background: linear-gradient(180deg, transparent, rgba(9,29,62,.28), transparent);
+}
+.showcase-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(360px, .74fr);
+  gap: 34px;
+  align-items: center;
+}
+.screen-stack {
+  display: grid;
+  gap: 16px;
+}
+.screen-stack article {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255,255,255,.045);
+  box-shadow: 0 18px 46px rgba(0,0,0,.18);
+}
+.screen-stack article:nth-child(2) { transform: translateX(34px); }
+.screen-stack span {
+  display: inline-flex;
+  margin-bottom: 10px;
+  color: var(--cyan);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: .72rem;
+}
+.screen-stack p { color: var(--muted); margin-bottom: 0; }
+@media (max-width: 1080px) {
+  .project-hero, .showcase-grid { grid-template-columns: 1fr; }
+  .project-detail-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 720px) {
+  .dashboard-preview { grid-template-columns: 1fr; }
+  .dashboard-preview aside { display: none; }
+  .metric-grid, .project-detail-grid, .tech-grid { grid-template-columns: 1fr; }
+  .project-hero { padding-top: 56px; }
+  .screen-stack article:nth-child(2) { transform: none; }
+}
