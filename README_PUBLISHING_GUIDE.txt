@@ -50,3 +50,9 @@ To change the details later:
 4. Save the file and refresh the browser
 
 To add another project, copy one <article class="project-card reveal"> block in the Portfolio section and replace the text.
+
+
+BIKEHUB LIVE WEBSITE LINK
+- The BikeHub portfolio card now opens: http://bikehubmotors.lk/
+- The case study section also includes a live website button.
+- The internal bikehub.html case study page is still included for project details.
