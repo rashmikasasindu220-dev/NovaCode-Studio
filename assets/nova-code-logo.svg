@@ -1,0 +1,31 @@
+<svg width="260" height="72" viewBox="0 0 260 72" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Nova Code Studio Logo</title>
+  <desc id="desc">NC monogram with orbit and star, plus Nova Code Studio wordmark.</desc>
+  <defs>
+    <linearGradient id="blueGrad" x1="18" y1="58" x2="86" y2="13" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D63FF"/>
+      <stop offset="0.55" stop-color="#10C8FF"/>
+      <stop offset="1" stop-color="#5BE3FF"/>
+    </linearGradient>
+    <linearGradient id="whiteGrad" x1="13" y1="9" x2="73" y2="59" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#CBD8FF"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.052 0 0 0 0 0.635 0 0 0 0 1 0 0 0 .7 0"/>
+      <feBlend in="SourceGraphic" mode="screen"/>
+    </filter>
+  </defs>
+  <g filter="url(#glow)">
+    <path d="M12 55V14L45 47V17H57V58H47L24 34V55H12Z" fill="url(#whiteGrad)"/>
+    <path d="M80 28C75.4 20.4 67.7 16 58.6 16C45.4 16 34.9 26.5 34.9 39.7C34.9 52.9 45.4 63.4 58.6 63.4C68 63.4 75.8 59 80.5 51.1L69.8 45.5C67.5 49.7 63.7 52.2 58.6 52.2C51.8 52.2 46.7 47 46.7 39.7C46.7 32.5 51.8 27.3 58.6 27.3C63.4 27.3 67.2 29.6 69.5 33.5L80 28Z" fill="url(#blueGrad)"/>
+    <path d="M11 60C27 39 50 20 84 11" stroke="url(#blueGrad)" stroke-width="3" stroke-linecap="round" opacity=".95"/>
+    <path d="M23 66C39 64 65 52 88 28" stroke="url(#blueGrad)" stroke-width="3" stroke-linecap="round" opacity=".82"/>
+    <circle cx="87" cy="11" r="5" fill="#20D7FF"/>
+    <path d="M58 31L61.8 38.2L69 42L61.8 45.8L58 53L54.2 45.8L47 42L54.2 38.2L58 31Z" fill="#EAF7FF"/>
+  </g>
+  <line x1="103" y1="17" x2="103" y2="56" stroke="#51617D" stroke-width="1.2" opacity=".75"/>
+  <text x="119" y="37" fill="#F6FAFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="27" font-weight="700" letter-spacing=".3">Nova Code</text>
+  <text x="121" y="57" fill="#17BFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="6.4">STUDIO</text>
+</svg>
